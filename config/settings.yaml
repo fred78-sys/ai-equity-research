@@ -1,0 +1,14 @@
+universe:
+  # Smoke-test list only. Replace with a maintained, documented universe.
+  tickers: [AAPL, MSFT, AMZN, GOOGL, NVDA, JPM, XOM, COST, WMT, UNH, SPY]
+data:
+  start_date: "2015-01-01"
+  benchmark: "SPY"
+model:
+  version: "v0.1-price-only"
+  horizon_days: 126
+  rebalance: "monthly"
+  top_n: 10
+  min_history_days: 252
+backtest:
+  transaction_cost_bps: 5.0
